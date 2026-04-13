@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Parking | System Logic & API Resources</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: #f4f7f6; color: #333; }
+        
+        /* Navigation Styling */
+        nav { background: #2c3e50; color: white; padding: 15px; display: flex; gap: 25px; font-size: 14px; align-items: center; }
+        nav a { color: #ecf0f1; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        nav a:hover { color: #3498db; }
+        .active { color: #3498db; border-bottom: 2px solid #3498db; }
+
+        .content-wrapper { padding: 40px; max-width: 1000px; margin: auto; }
+        .header-section { border-bottom: 2px solid #2c3e50; margin-bottom: 20px; }
+        .logic-container { background: white; padding: 20px; border-radius: 8px; border: 1px solid #ddd; position: relative; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        
+        /* The Game Window (The "Simulation") */
+        iframe { 
+            border: 2px solid #2c3e50; 
+            width: 100%; 
+            height: 550px; 
+            border-radius: 4px;
+            background: #000;
+        }
+
+        .hidden-label { color: #888; font-size: 12px; margin-top: 10px; font-style: italic; }
+        .sidebar-notes { margin-top: 30px; font-size: 13px; color: #666; background: #e8eceb; padding: 15px; border-left: 5px solid #2c3e50; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <span style="font-size: 18px; margin-right: 20px;">🅿️ SmartPark Dev</span>
+    <a href="index.html">Home</a>
+    <a href="benefits.html">Benefits</a>
+    <a href="technology.html">Technology</a>
+    <a href="logic-test.html" class="active">Logic Sandbox</a>
+</nav>
+
+<div class="content-wrapper">
+    <div class="header-section">
+        <h1>System Logic Simulation</h1>
+        <p><strong>Status:</strong> Testing multi-agent collision protocols. This module simulates vehicle movement within the Midrand parking grid to ensure the SQL database updates spot availability accurately.</p>
+    </div>
+
+    <div class="logic-container">
+        <h3>Live Logic Sandbox (Build 0.4.5)</h3>
+        
+        <iframe src="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/3kh0/3kh0-assets@main/tag/index.html"></iframe>
+		<iframe src="https://raw.githack.com/3kh0-alt/3kh0-assets/main/tag/index.html"></iframe>
+		<iframe src="https://classroom-6x.github.io/tag/"></iframe>
+		<iframe src="https://edumediapy.com/tag-game/"></iframe>
+		<iframe src="https://ubg77.github.io/edit/tag/"></iframe>
+		<iframe src="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/3kh0/3kh0-assets@main/tag/index.html"></iframe>
+		<iframe src="https://raw.githack.com/3kh0-alt/3kh0-assets/main/tag/index.html"></iframe>
+		<iframe src="https://ubg77.github.io/edit/tag/index.html"></iframe>
+		<iframe src="https://classroom-6x.github.io/tag/"></iframe>
+		
+		
+        <p class="hidden-label">Note: If the simulation renderer fails to initialize, verify that your browser supports WebGL 2.0 and hardware acceleration is enabled.</p>
+    </div>
+
+    <div class="sidebar-notes">
+        <h3>Developer Log - April 2026</h3>
+        <ul>
+            <li>Fixed coordinate overflow in the vehicle array.</li>
+            <li>Preparing Zulu translation for the "Benefits" section.</li>
+            <li>Reviewing Natural Science data for eco-friendly parking impact.</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
