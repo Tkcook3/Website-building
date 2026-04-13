@@ -8,23 +8,25 @@
         
         /* Navigation Styling */
         nav { background: #2c3e50; color: white; padding: 15px; display: flex; gap: 25px; font-size: 14px; align-items: center; }
-        nav a { color: #ecf0f1; text-decoration: none; font-weight: bold; }
+        nav a { color: #ecf0f1; text-decoration: none; font-weight: bold; transition: 0.3s; }
         nav a:hover { color: #3498db; }
         .active { color: #3498db; border-bottom: 2px solid #3498db; }
 
         .content-wrapper { padding: 40px; max-width: 1000px; margin: auto; }
         .header-section { border-bottom: 2px solid #2c3e50; margin-bottom: 20px; }
-        .logic-container { background: white; padding: 20px; border-radius: 8px; border: 1px solid #ddd; position: relative; }
+        .logic-container { background: white; padding: 20px; border-radius: 8px; border: 1px solid #ddd; position: relative; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         
-        /* The Game Window */
+        /* The Game Window (The "Simulation") */
         iframe { 
             border: 2px solid #2c3e50; 
             width: 100%; 
-            height: 520px; 
+            height: 550px; 
             border-radius: 4px;
+            background: #000;
         }
 
         .hidden-label { color: #888; font-size: 12px; margin-top: 10px; font-style: italic; }
+        .sidebar-notes { margin-top: 30px; font-size: 13px; color: #666; background: #e8eceb; padding: 15px; border-left: 5px solid #2c3e50; }
     </style>
 </head>
 <body>
@@ -35,28 +37,28 @@
     <a href="benefits.html">Benefits</a>
     <a href="technology.html">Technology</a>
     <a href="logic-test.html" class="active">Logic Sandbox</a>
-    <a href="#" style="opacity: 0.5;">Admin Login</a>
 </nav>
 
 <div class="content-wrapper">
     <div class="header-section">
         <h1>System Logic Simulation</h1>
-        <p>Current Sprint: Testing collision vectors and multi-agent movement within the parking grid. This simulation helps verify that vehicles do not overlap in restricted zones.</p>
+        <p><strong>Status:</strong> Testing multi-agent collision protocols. This module simulates vehicle movement within the Midrand parking grid to ensure the SQL database updates spot availability accurately.</p>
     </div>
 
     <div class="logic-container">
-        <h3>Live Logic Sandbox (Build 0.4.2)</h3>
-        <iframe src="https://deltamath111373269.netlify.app/games/tag/"></iframe>
+        <h3>Live Logic Sandbox (Build 0.4.5)</h3>
         
-        <p class="hidden-label">Technical Note: Ensure the WebGL renderer is active. If the simulation freezes, refresh the page to reset the coordinate array.</p>
+        <iframe src="https://3kh0.github.io/projects/tag/index.html"></iframe>
+        
+        <p class="hidden-label">Note: If the simulation renderer fails to initialize, verify that your browser supports WebGL 2.0 and hardware acceleration is enabled.</p>
     </div>
 
-    <div style="margin-top: 30px; font-size: 13px; color: #666;">
-        <h3>Project Notes</h3>
+    <div class="sidebar-notes">
+        <h3>Developer Log - April 2026</h3>
         <ul>
-            <li>Integrate GitHub API for real-time repository updates.</li>
-            <li>Optimizing HTML5 canvas for mobile responsiveness.</li>
-            <li>Testing Zulu language localization for the user interface.</li>
+            <li>Fixed coordinate overflow in the vehicle array.</li>
+            <li>Preparing Zulu translation for the "Benefits" section.</li>
+            <li>Reviewing Natural Science data for eco-friendly parking impact.</li>
         </ul>
     </div>
 </div>
